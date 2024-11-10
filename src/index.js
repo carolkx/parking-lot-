@@ -1,30 +1,27 @@
 // main.jsx
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import Thumb from './thumb'; 
-import Main from './App'; 
-// import Main from './App'; 
+import Thumb from "./thumb";
+import Main from "./App";
+import ListOfParking from "./ListOfParking";
 
 // Create routes
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Main />, 
-      },
+  {
+    path: "/",
+    element: <Main />,
+  },
 
   {
     path: "/thumb",
-    element: <Thumb />, 
+    element: <Thumb />,
   },
-//   {
-//     path: "/list",
-//     element: <Main />, 
-//   },
+  {
+    path: "/ListOfParking",
+    element: <ListOfParking />,
+  },
 ]);
 
 // Render the main app with RouterProvider
