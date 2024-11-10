@@ -5,14 +5,14 @@ import thumbDownImage from "./thumbsDown.png";
 function Thumb() {
   return (
     <div className="App">
-      <header className="App-header">
-          <h2>Give A Rating! </h2>
-          <h1> Was the parking lot decently empty? </h1>
+      <header>
+          <h1>Give A Rating! </h1>
+          <h2> Was the parking lot decently empty? </h2>
+          </header>
         <div className="thumb-button">
           <img src={thumbUpImage} alt="Thumb Up" className="thumb-button" />
           <img src={thumbDownImage} alt="Thumb Down" className="thumb-button" />
         </div>
-      </header>
     </div>
   );
 }

@@ -10,24 +10,21 @@ body {
   
   .App {
     text-align: center;
-  }
-  
-  .App-header {
-    background-color: transparent;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #6C899B;
   }
   
   h1 {
     color: #FFFFFF;
     font-size: 1.8rem;
-    margin-bottom: 50px;
+    margin-bottom: 1px;
+    background-color: transparent;
   }
 
   h2 {
     color: #FFFFFF;
     font-size: 1.8rem;
-    margin-bottom: 1px;
+    margin-bottom: 50px;
+    background-color: transparent;
   }
   
   .thumb-button {
