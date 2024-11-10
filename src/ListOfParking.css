@@ -33,6 +33,14 @@
     gap: 15px; 
   }
 
+  .image-text {
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+  }
+
+  .image-text :hover{
+    transform: scale(1.05);
+  }
+
 .locationCaption{
     display: flex;
     flex-direction: column; 
