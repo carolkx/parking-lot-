@@ -46,8 +46,7 @@ h1 {
 }
 
 .master {
-    align-self: center;
-    margin-right: auto;
+    align-items: center;
 }
 
 .parent {
@@ -65,3 +64,23 @@ h1 {
   top: 280px;
   left: 30px;
 }
+.birdLeft {
+    margin-top: 100px;
+}
+
+.birdRight {
+    margin-top: 100px;
+}
+
+.button {
+    border: none;
+    border-radius: 500px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
