@@ -1,4 +1,4 @@
-.foo {
+.title {
 color: black;
 }
 
@@ -18,7 +18,7 @@ color: black;
 .image-text {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 15px; 
   }
 
 .locationCaption{
@@ -27,13 +27,13 @@ color: black;
   }
 
   .locationCaption h4 {
-    margin: 0; 
-    font-size: 16px; 
+    margin: 3; 
+    font-size: 20px; 
   }
   
   .locationCaption p {
     margin: 0; 
     font-size: 14px; 
-    color: black; 
+    color: white; 
 }
 
