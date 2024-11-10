@@ -1,4 +1,5 @@
 import "./App.css";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       <div class="start">
         <img src="./tBirdLeft.img.png" alt="bird photo" class="birdLeft" />
 
-        <a href="thumbs.js"><button class="button">GET STARTED</button></a>
+        <Link to="/ListOfParking">
+          <button className="button">GET STARTED</button>
+        </Link>
 
         <img src="./tBirdR.img.png" alt="bird photo" class="birdRight" />
       </div>
@@ -23,5 +26,3 @@ function App() {
 export default App;
 
 
-
-// export default ListOfParkingDisplay;
