@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./carol.css";
+import "./ListOfParking.css";
 
 function ListOfParkingDisplay() {
   return (
