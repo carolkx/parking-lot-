@@ -3,12 +3,12 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div class="master">
       <h1>WELCOME TO</h1>
       <h1>PARKING LOT</h1>
-      <div id="welcomeImg">
-        <img src="./car.img.png" alt="car photo" />
-        <img src="./parking.img.png" alt="car photo" />
+      <div class="parent">
+        <img src="./parking.img.png" alt="car photo" class="image1" />
+        <img src="./car.img.png" alt="car photo" class="image2" />
       </div>
     </div>
   );
