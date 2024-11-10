@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -38,58 +42,60 @@
 }
 
 body {
-  background-color: #6C899B;
+  background-color: #6c899b;
+  text-align: center;
 }
 
 h1 {
   color: rgb(255, 255, 255);
+  font-family: "Sour Gummy";
+  font-size: 35px;
 }
-
-.master {
-    align-self: center;
-    height: fit-content;
-    width: fit-content;
-}
-
 
 .parent {
   position: relative;
   top: 0;
-  left: 0;
 }
 .image1 {
   position: relative;
   top: 0;
-  right: 0;
 }
 .image2 {
   position: absolute;
   top: 280px;
-  left: 30px;
+  left: 39%;
+}
+.start {
+  display: inline;
 }
 .birdLeft {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .birdRight {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .button {
-    border: none;
-    border-radius: 500px;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    font-size: 16px;
-    cursor: pointer;
-  }
+  border: none;
+  border-radius: 500px;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 500px;
+}
 
-  .button:hover {
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    animation-duration: 2s;
-    }
+.button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  transform: scale(1.1);
+  margin-top: 0px;
+}
