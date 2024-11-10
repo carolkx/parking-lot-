@@ -7,7 +7,6 @@ import thumbDownImage from "./thumbsDown.png";
 function Thumb() {
   const navigate = useNavigate();
 
-  // Function to handle the thumb click and navigate back to the list page
   const handleThumbClick = () => {
     navigate("/ListOfParking");
   };
