@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #6C899B;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+.master {
+    align-self: center;
+    margin-right: auto;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.image2 {
+  position: absolute;
+  top: 280px;
+  left: 30px;
+}
