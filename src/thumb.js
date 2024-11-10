@@ -1,4 +1,4 @@
-import './App.css';
+import './thumb.css';
 import thumbUpImage from './thumbsUp.png'; 
 import thumbDownImage from './thumbsDown.png';
 
@@ -7,8 +7,10 @@ function Thumb() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Give A Rating! Was the parking lot decently empty? </h1>
-        <div className="buttons-container">
+        <div></div>
+      <h2>Give A Rating! </h2> 
+      <h1> Was the parking lot decently empty? </h1>
+        <div className="thumb-button">
           <img
             src={thumbUpImage}
             alt="Thumb Up"

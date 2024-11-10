@@ -1,0 +1,17 @@
+.foo {
+color: black;
+}
+
+.parkingLotImage {
+    width: 100px;
+    height: 100px;
+}
+
+.parking {
+    display: flex;
+    flex-direction: column; 
+    align-items: left;    
+    gap: 30px;              
+}
+
+.locationCaption{}
