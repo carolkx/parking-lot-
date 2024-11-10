@@ -7,9 +7,10 @@ function Thumb() {
   return (
     <div className="App">
       <header className="App-header">
-        <div></div>
+        <div>
       <h2>Give A Rating! </h2> 
       <h1> Was the parking lot decently empty? </h1>
+      </div>
         <div className="thumb-button">
           <img
             src={thumbUpImage}
