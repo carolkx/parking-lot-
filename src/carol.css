@@ -14,4 +14,26 @@ color: black;
     gap: 30px;              
 }
 
-.locationCaption{}
+
+.image-text {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+
+.locationCaption{
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .locationCaption h4 {
+    margin: 0; 
+    font-size: 16px; 
+  }
+  
+  .locationCaption p {
+    margin: 0; 
+    font-size: 14px; 
+    color: black; 
+}
+
