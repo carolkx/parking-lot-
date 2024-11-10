@@ -14,7 +14,7 @@ function App() {
 
       <button class="button">GET STARTED</button>
 
-      <img src="./tBirdR.img.png" alt="bird photo" class="birdRight" />
+     <img src="./tBirdR.img.png" alt="bird photo" class="birdRight" />
     </div>
   );
 }
