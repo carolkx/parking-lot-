@@ -3,7 +3,7 @@
 
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
@@ -50,7 +50,14 @@ h1 {
   color: rgb(255, 255, 255);
   font-family: "Sour Gummy";
   font-size: 35px;
+  margin-bottom: 0px;
 }
+.lower {
+    color: rgb(255, 255, 255);
+    font-family: "Sour Gummy";
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
 
 .parent {
   position: relative;
@@ -63,7 +70,7 @@ h1 {
 .image2 {
   position: absolute;
   top: 280px;
-  left: 39%;
+  left: 18%;
 }
 .start {
   display: inline;
@@ -90,12 +97,10 @@ h1 {
   transition: 0.3s;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 500px;
 }
 
 .button:hover {
   background-color: rgb(255, 255, 255);
   color: #000000;
   transform: scale(1.1);
-  margin-top: 0px;
 }
