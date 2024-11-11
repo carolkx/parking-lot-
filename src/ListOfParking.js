@@ -2,7 +2,29 @@ import { useNavigate } from "react-router";
 import logo from "./logo.svg";
 import "./ListOfParking.css";
 
+import React,
+{
+    useState,
+    useEffect
+} from 'react';
+const UseLocalStorage = (key, initialValue) => {
+    const [value, setValue] = useState(() => {
+        const storedValue = localStorage.getItem(key);
+        return storedValue ?
+            JSON.parse(storedValue) :
+            initialValue;
+    });
+
+    useEffect(() => {
+        localStorage.setItem(key, JSON.stringify(value));
+    }, [key, value]);
+
+    return [value, setValue];
+};
+
 function ListOfParkingDisplay() {
+    const [localStorageValue, setLocalStorageValue] =
+        UseLocalStorage('myLocalStorageKey', 'default');
 
     // for transition to next page
     const navigate = useNavigate();
@@ -24,7 +46,7 @@ function ListOfParkingDisplay() {
                 <img src="./orchardCommons.png" alt="Place Vanier" className = "parkingLotImage"/>
                     <div className="locationCaption">
                         <h4>Orchard Commons</h4>
-                        <p>Crowdness: </p>
+                        <p>Crowdness: {localStorageValue}</p>
                     </div>
             </div>
 
