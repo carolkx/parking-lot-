@@ -5,14 +5,32 @@ import thumbUpImage from "./thumbsUp.png";
 import thumbDownImage from "./thumbsDown.png";
 
 function Thumb() {
+  const location = useLocation();
   const navigate = useNavigate();
 
+  // Extract the parking lot index from the location state
+  const { index } = location.state;
+
+  // Function to handle thumb up click (decrease crowdness)
   const handleThumbUpClick = () => {
-    navigate("/ListOfParking");
+    // Navigate back to the list with updated crowdness
+    navigate("/ListOfParking", {
+      state: {
+        index,
+        changeType: "thumbUp",
+      },
+    });
   };
 
+  // Function to handle thumb down click (increase crowdness)
   const handleThumbDownClick = () => {
-    navigate("/ListOfParking");
+    // Navigate back to the list with updated crowdness
+    navigate("/ListOfParking", {
+      state: {
+        index,
+        changeType: "thumbDown",
+      },
+    });
   };
 
   return (
