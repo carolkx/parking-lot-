@@ -18,6 +18,15 @@ function ListOfParkingDisplay() {
       <h1 className="directions">Please select the one you would like to rate: </h1>
         
         <div id="welcomeImg" className="parking">
+
+             
+        <div className="image-text" onClick={handleParkingClick}>
+                <img src="./thunderbird.png" alt="Place Vanier" className = "parkingLotImage"/>
+                    <div className="locationCaption">
+                        <h4>Thunderbird Parkade</h4>
+                        <p>Crowdness: </p>
+                    </div>
+            </div>
         
            
             <div className="image-text" onClick={handleParkingClick}>
