@@ -17,7 +17,7 @@ function ListOfParkingDisplay() {
         Please select the one you would like to rate:{" "}
       </h1>
 
-      <div id="welcomeImg" className="parking">
+      <div id="parking" className="parking">
 
         <div className="image-text" onClick={handleParkingClick}>
             <img
