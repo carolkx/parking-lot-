@@ -6,15 +6,13 @@ import thumbDownImage from "./thumbsDown.png";
 
 function Thumb() {
   const navigate = useNavigate();
-  const location = useLocation();
-  const{index} = location.state;
 
   const handleThumbUpClick = () => {
-    navigate("/ListOfParking", {state: {index, changeType: "thumbUp"}});
+    navigate("/ListOfParking");
   };
 
   const handleThumbDownClick = () => {
-    navigate("/ListOfParking",  {state: {index, changeType: "thumbDown"}});
+    navigate("/ListOfParking");
   };
 
   return (

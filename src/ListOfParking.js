@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./ListOfParking.css";
 
 import React,
@@ -26,16 +26,14 @@ function ListOfParkingDisplay() {
     const [localStorageValue, setLocalStorageValue] =
         UseLocalStorage('myLocalStorageKey', 'default');
 
-    // for transition to next page
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const handleParkingClick = () => {
-        navigate("/thumb");
-    };
-
+  const handleParkingClick = (index) => {
+    navigate(`/thumb`)
+  };
 
   return (
-    <div className = "layout">
+    <div className="layout">
       <h1 className="title">Here is a list of all the parking lots at UBC.</h1>
       <h1 className="directions">Please select the one you would like to rate: </h1>
         
@@ -46,35 +44,46 @@ function ListOfParkingDisplay() {
                 <img src="./orchardCommons.png" alt="Place Vanier" className = "parkingLotImage"/>
                     <div className="locationCaption">
                         <h4>Orchard Commons</h4>
-                        <p>Crowdness: {localStorageValue}</p>
-                    </div>
-            </div>
-
-            <div className ="image-text" onClick={handleParkingClick}>
-                <img src="./placeVanier.png" alt="Place Vanier" className = "parkingLotImage"/>
-                    <div className="locationCaption">
-                        <h4>Place Vanier</h4>
                         <p>Crowdness: </p>
                     </div>
             </div>
 
-            <div className ="image-text" onClick={handleParkingClick}>
-                <img src="./totemPark.png" alt="Totem Park" className = "parkingLotImage"/>
-                    <div className="locationCaption">
-                        <h4>Totem Park</h4>
-                        <p>Crowdness: </p>
-                    </div>
-            </div>
-        
-        
-            <div className ="image-text" onClick={handleParkingClick}>
-                <img src="./walterGage.png" alt="Totem Park" className = "parkingLotImage"/>
-                    <div className="locationCaption">
-                        <h4>Walter Gage</h4>
-                        <p>Crowdness: </p>
-                    </div>
-            </div>
-        </div>      
+        <div className="image-text" onClick={handleParkingClick}>
+          <img
+            src="./placeVanier.png"
+            alt="Place Vanier"
+            className="parkingLotImage"
+          />
+          <div className="locationCaption">
+            <h4>Place Vanier</h4>
+            <p>Crowdness: </p>
+          </div>
+        </div>
+
+        <div className="image-text" onClick={handleParkingClick}>
+          <img
+            src="./totemPark.png"
+            alt="Totem Park"
+            className="parkingLotImage"
+          />
+          <div className="locationCaption">
+            <h4>Totem Park</h4>
+            <p>Crowdness: </p>
+          </div>
+        </div>
+
+        <div className="image-text" onClick={handleParkingClick}>
+          <img
+            src="./walterGage.png"
+            alt="Totem Park"
+            className="parkingLotImage"
+          />
+          <div className="locationCaption">
+            <h4>Walter Gage</h4>
+            <p>Crowdness: </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
