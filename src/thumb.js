@@ -34,9 +34,9 @@ function Thumb() {
   };
 
   return (
-    <div className="App">
+    <div className="ThumbPage App">
       <header>
-        <h1>Give A Rating!</h1>
+        <h1 class="thumbheader">Give A Rating!</h1>
         <h2>Was the parking lot decently empty?</h2>
       </header>
       <div className="thumb-button">

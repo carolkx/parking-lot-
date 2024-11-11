@@ -1,25 +1,37 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #6C899B;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #6C899B;
+  }
+  
+  .ThumbPage {
+    width: 185vh;
+    height: 100vh; 
+    background-image: url('/public/parkinglotee.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
   }
   
   .App {
     text-align: center;
-    background-color: #6C899B;
+    background-color: rgba(108, 137, 155, 0.8);
+    padding: 20px;
+    border-radius: 10px;
   }
   
-  h1 {
+  .thumbheader {
     color: #FFFFFF;
     font-size: 1.8rem;
+    margin-top: 200px;
     margin-bottom: 1px;
     background-color: transparent;
   }
-
+  
   h2 {
     color: #FFFFFF;
     font-size: 1.8rem;
