@@ -2,21 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.App {
-    text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -48,16 +33,21 @@ body {
 
 h1 {
   color: rgb(255, 255, 255);
-  font-family: "Sour Gummy";
-  font-size: 35px;
+  font-family: "Georgia";
+  font-size: 45px;
   margin-bottom: 0px;
 }
 .lower {
     color: rgb(21, 2, 2);
     font-family: "italic";
+    font-size: 70px;
     font-optical-sizing: auto;
     font-weight: 551;
     font-style: normal;
+    margin-bottom: 40px;
+    text-shadow: 
+    0px 3px 3px white,    
+    0px 0px 8px black;     
   }
 
 .parent {
@@ -70,8 +60,10 @@ h1 {
 }
 .image2 {
   position: absolute;
-  top: 280px;
-  left: 18%;
+  top: 250px;
+  left: 33%;
+  width: 350px;
+  height: 220px;
 }
 .start {
   display: inline;
