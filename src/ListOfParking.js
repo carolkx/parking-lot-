@@ -89,13 +89,13 @@ function ListOfParkingDisplay() {
         if (i === index) {
           if (changeType === "thumbUp") {
             // Decrease crowdness
-            const decreaseIndex = - 3 / (2 * Math.sqrt(10.5 - lot.crowdness));
+            const decreaseIndex = - 2 / (2 * Math.sqrt(10.5 - lot.crowdness));
             lot.setCrowdness((prevCrowdness) =>
               Math.max(0, prevCrowdness + decreaseIndex)
             );
           } else if (changeType === "thumbDown") {
             // Increase crowdness
-            const increaseIndex = 3 / (2 * Math.sqrt(lot.crowdness + 0.5));
+            const increaseIndex = 2 / (2 * Math.sqrt(lot.crowdness + 0.5));
             lot.setCrowdness((prevCrowdness) =>
               Math.min(10, prevCrowdness + increaseIndex)
             );
