@@ -18,10 +18,23 @@ function ListOfParkingDisplay() {
       </h1>
 
       <div id="welcomeImg" className="parking">
+
+        <div className="image-text" onClick={handleParkingClick}>
+            <img
+                src="./thunderbird.png"
+                alt="Thunderbird Parkade"
+                className="parkingLotImage"
+            />
+            <div className="locationCaption">
+                <h4>Thunderbird Parkade</h4>
+                <p>Crowdness: </p>
+            </div>
+        </div>
+
         <div className="image-text" onClick={handleParkingClick}>
           <img
             src="./orchardCommons.png"
-            alt="Place Vanier"
+            alt="Thunderbird"
             className="parkingLotImage"
           />
           <div className="locationCaption">
