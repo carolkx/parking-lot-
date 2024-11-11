@@ -1,14 +1,20 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./thumb.css";
 import thumbUpImage from "./thumbsUp.png";
 import thumbDownImage from "./thumbsDown.png";
 
 function Thumb() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const{index} = location.state;
 
-  const handleThumbClick = () => {
-    navigate("/ListOfParking");
+  const handleThumbUpClick = () => {
+    navigate("/ListOfParking", {state: {index, changeType: "thumbUp"}});
+  };
+
+  const handleThumbDownClick = () => {
+    navigate("/ListOfParking",  {state: {index, changeType: "thumbDown"}});
   };
 
   return (
@@ -22,13 +28,13 @@ function Thumb() {
           src={thumbUpImage}
           alt="Thumb Up"
           className="thumb-button"
-          onClick={handleThumbClick}
+          onClick={handleThumbUpClick}
         />
         <img
           src={thumbDownImage}
           alt="Thumb Down"
           className="thumb-button"
-          onClick={handleThumbClick}
+          onClick={handleThumbDownClick}
         />
       </div>
     </div>
