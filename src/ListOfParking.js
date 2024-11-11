@@ -123,7 +123,7 @@ function ListOfParkingDisplay() {
           />
           <div className="locationCaption">
             <h4>Thunderbird Parkade</h4>
-            <p>Crowdness: {thunderbirdCrowdness.toFixed(1)}</p>
+            <p>Crowdedness: {thunderbirdCrowdness.toFixed(1)}</p>
           </div>
         </div>
 
@@ -135,7 +135,7 @@ function ListOfParkingDisplay() {
           />
           <div className="locationCaption">
             <h4>Orchard Commons</h4>
-            <p>Crowdness: {orchardCommonsCrowdness.toFixed(1)}</p>
+            <p>Crowdedness: {orchardCommonsCrowdness.toFixed(1)}</p>
           </div>
         </div>
 
@@ -147,7 +147,7 @@ function ListOfParkingDisplay() {
           />
           <div className="locationCaption">
             <h4>Place Vanier</h4>
-            <p>Crowdness: {placeVanierCrowdness.toFixed(1)}</p>
+            <p>Crowdedness: {placeVanierCrowdness.toFixed(1)}</p>
           </div>
         </div>
 
@@ -159,7 +159,7 @@ function ListOfParkingDisplay() {
           />
           <div className="locationCaption">
             <h4>Totem Park</h4>
-            <p>Crowdness: {totemParkCrowdness.toFixed(1)}</p>
+            <p>Crowdedness: {totemParkCrowdness.toFixed(1)}</p>
           </div>
         </div>
 
@@ -171,7 +171,7 @@ function ListOfParkingDisplay() {
           />
           <div className="locationCaption">
             <h4>Walter Gage</h4>
-            <p>Crowdness: {walterGageCrowdness.toFixed(1)}</p>
+            <p>Crowdedness: {walterGageCrowdness.toFixed(1)}</p>
           </div>
         </div>
       </div>
