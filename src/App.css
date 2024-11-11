@@ -53,10 +53,11 @@ h1 {
   margin-bottom: 0px;
 }
 .lower {
-    color: rgb(255, 255, 255);
-    font-family: "Sour Gummy";
-    font-size: 35px;
-    margin-bottom: 10px;
+    color: rgb(21, 2, 2);
+    font-family: "italic";
+    font-optical-sizing: auto;
+    font-weight: 551;
+    font-style: normal;
   }
 
 .parent {

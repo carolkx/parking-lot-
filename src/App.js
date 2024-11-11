@@ -5,7 +5,9 @@ function App() {
   return (
     <div>
       <h1>WELCOME TO</h1>
-      <h1 class="lower">PARKING LOT</h1>
+      <h1 class="lower" style={{ fontStyle: 'italic' }}>
+      RATE  MY PARK
+    </h1>
       <div class="parent">
         <img src="./parking.img.png" alt="parking photo" class="image1" />
         <img src="./car.img.png" alt="car photo" class="image2" />
