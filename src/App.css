@@ -63,17 +63,17 @@ h1 {
   top: 250px;
   left: 33%;
   width: 350px;
-  height: 220px;
+  height: 210px;
 }
 .start {
   display: inline;
 }
 .birdLeft {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .birdRight {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .button {
